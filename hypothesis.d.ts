@@ -15,7 +15,7 @@ type TTestResult = {
 }
 
 interface TTestFn {
-    (left: number[], right: number[], options:Partial<TTestOptions>|undefined = undefined): TTestResult;
+    (left: number[], right: number[], options?:Partial<TTestOptions>): TTestResult;
 }
 
 declare var ttest: TTestFn;
